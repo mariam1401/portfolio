@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Mariam",
+  lastName: "Karapetyan",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "SoftWare Engineer",
+  avatar: "/images/avatar.jpeg",
+  email: "mariamkarapetyan1401@gmail.com",
+  location: "Armenia", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Russian"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -30,17 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/mariam1401",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/mariam-karapetyan-47ba13214/",
   },
   {
     name: "Email",
@@ -51,11 +46,11 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/avatar.jpeg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Implementing design systems with scalable frontend architecture</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
@@ -63,8 +58,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Mariam, a frontend developer specializing in building performant, accessible interfaces that bring design systems to life.
     </>
   ),
 };
@@ -90,9 +84,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I’m a frontend developer with 4 years of hands-on experience building responsive, user-friendly web applications. My main focus is delivering pixel-perfect UI with clean, maintainable code using modern technologies like React.js, Next.js, JavaScript, TypeScript, HTML, and CSS.<br/>
+        <br/>Over the years, I’ve contributed to a variety of projects — from B2B platforms to dynamic content-rich websites — collaborating closely with designers, backend developers, and product teams. I enjoy turning complex problems into simple, elegant interfaces, and I care deeply about performance, accessibility, and user experience.<br/>
+        <br/>I’m constantly learning and adapting to new tools and frameworks, and I take pride in writing scalable code that fits well in team-based environments. Whether it’s optimizing performance, integrating APIs, or improving design systems, I love building frontends that not only look good but also work seamlessly.
       </>
     ),
   },
@@ -101,41 +95,29 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "SoftShark LLC",
+        timeframe: "2021 - Present",
+        role: "Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Develop and maintain scalable user interfaces using React.js and Next.js, ensuring responsiveness and performance across devices and browsers.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Collaborate with backend developers and designers to integrate APIs, implement design systems, and deliver clean, accessible, and production-ready frontend code.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Booka LLC",
+        timeframe: "2022 - 2023",
+        role: "Software Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Implement dynamic features and reusable components to enhance user experience and reduce development time across the project.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Optimize frontend performance by identifying bottlenecks, lazy-loading assets, and improving Core Web Vitals for better SEO and load speed.
           </>,
         ],
         images: [],
@@ -143,55 +125,82 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Armenian State University of Economics",
+        description: <>Business Management faculty (2018-2022)</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "React.js",
+        description: <></>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: <></>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+
         ],
       },
+      {
+        title: "Javascript",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+
+        ],
+      },
+      {
+        title: "Typescript",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+
+        ],
+      },
+      {
+        title: "Redux Toolkit/Redux Saga",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+
+        ],
+      },
+      {
+        title: "HTML",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+
+        ],
+      },
+      {
+        title: "CSS/SCSS/Tailwind CSS",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+
+        ],
+      },
+      {
+        title: "Material Ui/Ant Design",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+
+        ],
+      },
+
     ],
   },
 };
@@ -223,12 +232,12 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/gallery/areg1.png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
+      src: "/images/gallery/areg2.png",
       alt: "image",
       orientation: "horizontal",
     },
